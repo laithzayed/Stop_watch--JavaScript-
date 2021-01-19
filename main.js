@@ -32,10 +32,6 @@ function start(){
 function stop(){
     clearInterval(time)
 }
-// // //pause timer
-// function pause(){
-//     clearInterval(time)
-// }
 //reset timer
 function reset(){
     ms = 0;
@@ -46,10 +42,8 @@ function reset(){
 }
 const startBtn = document.getElementById('startBtn');
 const stopBtn =  document.getElementById('stopBtn');
-// const pauseBtn =  document.getElementById('pauseBtn');
 const resetBtn = document.getElementById('resetBtn');
 
 startBtn.addEventListener('click',start,false);
 stopBtn.addEventListener('click',stop,false);
-// stopBtn.addEventListener('click',pause,false);
 resetBtn.addEventListener('click',reset,false);
